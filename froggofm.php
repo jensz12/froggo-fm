@@ -57,7 +57,7 @@ a:hover, a:active {
 			<span id="artwork"></span>
 			<div class="card-body">
 			<h1 class="card-title">Froggo FM</h1>
-			<p class="card-subtitle mb-2 text-muted">Spiller nu:</p>
+			<p class="card-subtitle mb-2 text-muted">Spiller nu</p>
 			<p class="card-text"><span id="playing"><?php echo $now_playing; ?></span></p>
 			<div class="froggo-stream">
         			<audio crossorigin preload="none">
