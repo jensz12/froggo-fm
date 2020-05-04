@@ -1,6 +1,6 @@
 <?php
-$now_playing = file_get_contents('https://jensz12.com/froggofm-playing.php');
-$artwork = file_get_contents('https://jensz12.com/froggofm-artwork.php');
+$now_playing = file_get_contents('https://froggofm.jensz12.com/playing.php');
+$artwork = file_get_contents('https://froggofm.jensz12.com/artwork.php');
 ?>
 <!DOCTYPE html>
 <html lang="da">
@@ -19,7 +19,7 @@ $artwork = file_get_contents('https://jensz12.com/froggofm-artwork.php');
 <meta name="twitter:description" content="Froggo FM">
 <meta name="twitter:image:src" content="https://www.gravatar.com/avatar/5ce60652703ef30780a3cbb1c0eb0317?s=2000">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous">
-<link rel="manifest" href="/manifest-froggo.json">
+<link rel="manifest" href="https://froggofm.jensz12.com/manifest.json">
 <link rel="image_src" href="/https://www.gravatar.com/avatar/5ce60652703ef30780a3cbb1c0eb0317?s=2000">
 <link href='https://fonts.googleapis.com/css?family=Roboto:100,300' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" type="text/css" href="https://design.jensz12.com/css/green-audio-player.css">
@@ -88,8 +88,8 @@ function worker(){
 		cache: false
 	});
 
-	$("#playing").load('froggofm-playing.php');
-	$("#artwork").load('froggofm-artwork.php');
+	$("#playing").load('playing.php');
+	$("#artwork").load('artwork.php');
 }
 $(function(){
 	worker();
