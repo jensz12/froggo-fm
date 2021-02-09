@@ -32,20 +32,28 @@ body {
 	background-attachment: fixed;
 	height: 100%;
 	font-family: 'Roboto', sans-serif;
-	padding-top: 70px;
+	padding-top: 10px;
 }
-a:link, a:visited {
-	color: rgb(102, 102, 102);
-	text-decoration: none;
+@media (prefers-color-scheme: light) {
+
+.card-title, h1, h2, h3, h4, h5, p, b, card-text{
+  color: black;
+}.card {
+  background-color: white;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
-a:hover, a:active {
-	text-decoration: underline;
 }
-.player {
-    margin-top: 2px;
-    margin-bottom: 2px;
-    margin-right: 2px;
-    margin-left: 2px;
+
+@media (prefers-color-scheme: dark) {
+
+.card-title, h1, h2, h3, h4, h5, p, b, card-text {
+  color: white;
+}.card {
+  background-color: #212121;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
 }
 </style>
 </head>
